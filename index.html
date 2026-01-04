@@ -11,7 +11,8 @@
     body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071126 0%,#081127 100%);color:var(--text);line-height:1.5}
     .container{max-width:900px;margin:36px auto;padding:28px}
     header{display:flex;align-items:center;gap:18px}
-    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021026}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021026;overflow:hidden}
+    .avatar-img{width:100%;height:100%;object-fit:cover;display:block}
     h1{margin:0;font-size:28px}
     .subtitle{color:var(--muted);margin-top:6px}
     .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
@@ -30,7 +31,9 @@
 <body>
   <div class="container">
     <header>
-      <div class="avatar">OS</div>
+      <div class="avatar">
+        <img src="https://github.com/SAMUELSONAK.png" alt="Owoseni Samuel" class="avatar-img"/>
+      </div>
       <div style="flex:1">
         <h1>Owoseni Samuel</h1>
         <div class="subtitle">Data Analyst — Statistics · Time Series · Forecasting · Risk Modeling</div>
@@ -44,7 +47,7 @@
       <main class="card">
         <section>
           <h2 style="margin-top:0">About</h2>
-          <p>I am an undergraduate Statistics student with hands-on experience in data analysis, statistical modeling and financial applications. I build reproducible analyses, create clear visualizations, and translate data into actionable insights for decision-making.</p>
+          <p>I am an undergraduate Statistics student with hands-on experience in data analysis, statistical modeling and financial applications. I build reproducible analyses, create clear visualizat[...]</p>
         </section>
 
         <section style="margin-top:16px">
@@ -52,20 +55,20 @@
           <div class="projects">
             <div class="project">
               <strong>Billing Data Management and Analysis Project</strong>
-              <p class="muted">Managed and organized billing records to improve accuracy and reporting readiness. Structured raw Excel billing data, validated entries, removed duplicates, and prepared the dataset for future analysis and reporting.</p>
+              <p class="muted">Managed and organized billing records to improve accuracy and reporting readiness. Structured raw Excel billing data, validated entries, removed duplicates, and prepared[...]</p>
               <div class="project-meta">
                 <div><strong>Problem statement:</strong> Ensure billing records are accurate, consistent and easy to report on by structuring and validating raw billing data.</div>
-                <div style="margin-top:6px"><strong>Data:</strong> Excel billing records with transaction dates, customer details, charges and payment-related entries requiring cleaning and validation.</div>
-                <div style="margin-top:6px"><strong>Methodology / tasks:</strong> Cleaned and organized data, removed inconsistencies and duplicates, applied validation checks and structured the dataset for sorting, filtering and reporting.</div>
+                <div style="margin-top:6px"><strong>Data:</strong> Excel billing records with transaction dates, customer details, charges and payment-related entries requiring cleaning and validation[...]</div>
+                <div style="margin-top:6px"><strong>Methodology / tasks:</strong> Cleaned and organized data, removed inconsistencies and duplicates, applied validation checks and structured the datas[...]</div>
                 <div style="margin-top:6px"><strong>Tools:</strong> Microsoft Excel</div>
-                <div style="margin-top:6px"><strong>Key outcomes:</strong> Improved data organization and readability, reduced errors in billing records, and produced a structured dataset suitable for analysis and reporting.</div>
+                <div style="margin-top:6px"><strong>Key outcomes:</strong> Improved data organization and readability, reduced errors in billing records, and produced a structured dataset suitable for[...]</div>
                 <div style="margin-top:6px"><strong>Conclusion:</strong> Demonstrates practical experience in data handling, cleaning and record management for administrative and financial datasets.</div>
               </div>
             </div>
 
             <div class="project">
               <strong>Exchange Rate Volatility Modelling (GARCH)</strong>
-              <p class="muted">Modeled FX return volatility using GARCH-family models, performed model selection and evaluated forecasting performance. Tools: Python (statsmodels), R (rugarch), pandas, matplotlib.</p>
+              <p class="muted">Modeled FX return volatility using GARCH-family models, performed model selection and evaluated forecasting performance. Tools: Python (statsmodels), R (rugarch), pandas[...]</p>
             </div>
 
             <div class="project">
@@ -88,7 +91,7 @@
 
         <section style="margin-top:16px">
           <h2>Approach</h2>
-          <p>I follow a reproducible workflow: define the question, gather and clean data, exploratory analysis, select appropriate statistical/machine learning methods, validate results and communicate them with clear visuals and narratives.</p>
+          <p>I follow a reproducible workflow: define the question, gather and clean data, exploratory analysis, select appropriate statistical/machine learning methods, validate results and communica[...]</p>
         </section>
 
       </main>
@@ -129,7 +132,7 @@
 
     <footer>
       <div>© Samuel Owoseni — Data Analysis & Statistical Modeling</div>
-      <div style="margin-top:6px;color:var(--muted)">Built with a focus on clarity and reproducibility. View source on <a class="link" href="https://github.com/SAMUELSONAK/owoseni-samuel.github.io" target="_blank" rel="noopener">GitHub</a>.</div>
+      <div style="margin-top:6px;color:var(--muted)">Built with a focus on clarity and reproducibility. View source on <a class="link" href="https://github.com/SAMUELSONAK/owoseni-samuel.github.io" target="_blank" rel="noopener">GitHub</a></div>
     </footer>
   </div>
 </body>
