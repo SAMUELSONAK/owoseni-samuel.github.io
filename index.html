@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Owoseni Samuel — Data Analyst</title>
+  <meta name="description" content="Portfolio of Owoseni Samuel — Data Analyst. Projects in time series, forecasting, risk modeling and data visualization." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--text:#e6eef8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071126 0%,#081127 100%);color:var(--text);line-height:1.5}
+    .container{max-width:900px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021026}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .projects .project{margin-bottom:12px}
+    a.link{color:var(--accent);text-decoration:none}
+    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+    .contact a{display:inline-block;margin-right:12px;color:var(--text);text-decoration:none}
+    @media(min-width:760px){.grid{grid-template-columns:2fr 1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">OS</div>
+      <div>
+        <h1>Owoseni Samuel</h1>
+        <div class="subtitle">Data Analyst — Statistics · Time Series · Forecasting · Risk Modeling</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <section>
+          <h2 style="margin-top:0">About</h2>
+          <p>I am an undergraduate Statistics student with hands-on experience in data analysis, statistical modeling and financial applications. I build reproducible analyses, create clear visualizations, and translate data into actionable insights for decision-making.</p>
+        </section>
+
+        <section style="margin-top:16px">
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <strong>Exchange Rate Volatility Modelling (GARCH)</strong>
+              <p class="muted">Modeled FX return volatility using GARCH-family models, performed model selection and evaluated forecasting performance. Tools: Python (statsmodels), R (rugarch), pandas, matplotlib.</p>
+            </div>
+
+            <div class="project">
+              <strong>Inflation Trend & Forecasting (Nigeria)</strong>
+              <p class="muted">Analyzed CPI series, decomposed trend and seasonality, and built short-term forecasts using ARIMA/XGBoost hybrids. Presented findings with interactive charts.</p>
+            </div>
+
+            <div class="project">
+              <strong>Loan Default Risk Analysis</strong>
+              <p class="muted">Cleaned and engineered features from loan datasets, trained classification models, and produced explainable model reports (SHAP) to identify key risk drivers.</p>
+            </div>
+
+            <div class="project">
+              <strong>Interactive Dashboard (Tableau / Streamlit)</strong>
+              <p class="muted">Built dashboards for stakeholders to explore KPIs, cohort metrics and scenario analysis with filters and downloadable reports.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section style="margin-top:16px">
+          <h2>Approach</h2>
+          <p>I follow a reproducible workflow: define the question, gather and clean data, exploratory analysis, select appropriate statistical/machine learning methods, validate results and communicate them with clear visuals and narratives.</p>
+        </section>
+
+      </main>
+
+      <aside class="card">
+        <section>
+          <h3 style="margin-top:0">Skills</h3>
+          <div class="skills">
+            <span class="skill">Python (pandas, scikit-learn)</span>
+            <span class="skill">R (tidyverse)</span>
+            <span class="skill">Time Series</span>
+            <span class="skill">Forecasting</span>
+            <span class="skill">GARCH</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Data Viz (matplotlib, seaborn)</span>
+            <span class="skill">Tableau / Power BI</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Statistics</span>
+          </div>
+        </section>
+
+        <section style="margin-top:16px">
+          <h3>Contact</h3>
+          <p class="contact">
+            <a class="link" href="mailto:samuelokikijesu3@gmail.com">Email</a>
+            <a class="link" href="https://github.com/SAMUELSONAK" target="_blank" rel="noopener">GitHub</a>
+            <a class="link" href="#resume">Resume</a>
+          </p>
+        </section>
+
+        <section style="margin-top:16px">
+          <h3>Education</h3>
+          <p class="muted">Undergraduate — B.Sc. Statistics</p>
+        </section>
+
+      </aside>
+    </div>
+
+    <footer>
+      <div>© Samuel Owoseni — Data Analysis & Statistical Modeling</div>
+      <div style="margin-top:6px;color:var(--muted)">Built with a focus on clarity and reproducibility. View source on <a class="link" href="https://github.com/SAMUELSONAK/owoseni-samuel.github.io" target="_blank" rel="noopener">GitHub</a>.</div>
+    </footer>
+  </div>
+</body>
+</html>
