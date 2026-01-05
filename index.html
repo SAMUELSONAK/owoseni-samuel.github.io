@@ -1,34 +1,334 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Owoseni Samuel — Data Analyst</title>
-  <meta name="description" content="Portfolio of Owoseni Samuel — Data Analyst. Projects in time series, forecasting, risk modeling and data visualization." />
+  <meta name="description"
+    content="Portfolio of Owoseni Samuel — Data Analyst. Projects in time series, forecasting, risk modeling and data visualization." />
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--text:#e6eef8}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071126 0%,#081127 100%);color:var(--text);line-height:1.5}
-    .container{max-width:900px;margin:36px auto;padding:28px}
-    header{display:flex;align-items:center;gap:18px}
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #06b6d4;
+      --muted: #94a3b8;
+      --text: #e6eef8
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #071126 0%, #081127 100%);
+      color: var(--text);
+      line-height: 1.5
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 36px auto;
+      padding: 28px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
     /* Circular avatar with subtle shadow and crop towards head */
-    .avatar{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021026;overflow:hidden;flex:0 0 84px;border:2px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,16,38,0.45)}
-    .avatar-img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block}
-    h1{margin:0;font-size:28px}
-    .subtitle{color:var(--muted);margin-top:6px}
-    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
-    .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
-    .projects .project{margin-bottom:12px}
-    a.link{color:var(--accent);text-decoration:none}
-    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
-    .contact a{display:inline-block;margin-right:12px;color:var(--text);text-decoration:none}
-    .resume-btn{background:var(--accent);color:#012; padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
-    .project-meta{color:var(--muted);font-size:13px;margin-top:6px}
-    @media(min-width:760px){.grid{grid-template-columns:2fr 1fr}}
+    .avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #021026;
+      overflow: hidden;
+      flex: 0 0 84px;
+      border: 2px solid rgba(255, 255, 255, 0.03);
+      box-shadow: 0 6px 18px rgba(2, 16, 38, 0.45)
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 15%;
+      display: block
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 6px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 22px
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 18px;
+      border-radius: 12px
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .projects .project {
+      margin-bottom: 12px
+    }
+
+    a.link {
+      color: var(--accent);
+      text-decoration: none
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 12px;
+      color: var(--text);
+      text-decoration: none
+    }
+
+    .resume-btn {
+      background: var(--accent);
+      color: #012;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    .project-meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 6px
+    }
+
+    @media(min-width:760px) {
+      .grid {
+        grid-template-columns: 2fr 1fr
+      }
+    }
+
+    /* Enhanced Project Cards */
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .project h3 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: transparent;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: auto;
+      align-self: flex-start;
+      transition: all 0.2s;
+      font-size: 13px;
+    }
+
+    .btn-outline:hover {
+      background: var(--accent);
+      color: #021026;
+    }
+
+    /* Modals */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      backdrop-filter: blur(4px);
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal-content {
+      background: var(--bg);
+      width: 100%;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 32px;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      transform: translateY(20px);
+      transition: transform 0.3s;
+    }
+
+    .modal-overlay.active .modal-content {
+      transform: translateY(0);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: var(--muted);
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .close-modal:hover {
+      color: var(--text);
+    }
+
+    .modal-header {
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 16px;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .modal-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media(min-width: 768px) {
+      .modal-grid {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    .modal-img-placeholder {
+      width: 100%;
+      height: 240px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .detail-item {
+      margin-bottom: 20px;
+    }
+
+    .detail-item h4 {
+      margin: 0 0 8px 0;
+      color: var(--accent);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .detail-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(6, 182, 212, 0.1);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -48,70 +348,514 @@
       <main class="card">
         <section>
           <h2 style="margin-top:0">ABOUT</h2>
-          <p>I am a Data Analyst and Statistician with a strong foundation in statistical theory and practical data analysis. I specialize in collecting, cleaning, analyzing, and interpreting data to support evidence-based decision-making. My expertise includes exploratory data analysis, hypothesis testing, regression modeling, and time-series analysis, with applications in finance, business, and research.</p>
-<p>I am proficient in tools such as Python, Excel, SQL, and statistical software, and I enjoy transforming complex datasets into clear insights through data visualization and structured reporting. With an analytical mindset and attention to detail, I focus on delivering accurate, actionable results that solve real-world problems.</p>
+          <p>I am a Data Analyst and Statistician with a strong foundation in statistical theory and practical data
+            analysis. I specialize in collecting, cleaning, analyzing, and interpreting data to support evidence-based
+            decision-making. My expertise includes exploratory data analysis, hypothesis testing, regression modeling,
+            and time-series analysis, with applications in finance, business, and research.</p>
+          <p>I am proficient in tools such as Python, Excel, SQL, and statistical software, and I enjoy transforming
+            complex datasets into clear insights through data visualization and structured reporting. With an analytical
+            mindset and attention to detail, I focus on delivering accurate, actionable results that solve real-world
+            problems.</p>
         </section>
 
         <section style="margin-top:16px">
           <h2>Selected Projects</h2>
           <div class="projects">
-            <div class="project">
-              <strong>Billing Data Management and Analysis Project</strong>
-              <p class="muted">Managed and organized billing records to improve accuracy and reporting readiness. Structured raw Excel billing data, validated entries, removed duplicates, and prepared[...]</p>
-              <div class="project-meta">
-                <div><strong>Problem statement:</strong> Ensure billing records are accurate, consistent and easy to report on by structuring and validating raw billing data.</div>
-                <div style="margin-top:6px"><strong>Data:</strong> Excel billing records with transaction dates, customer details, charges and payment-related entries requiring cleaning and validation[...]</div>
-                <div style="margin-top:6px"><strong>Methodology / tasks:</strong> Cleaned and organized data, removed inconsistencies and duplicates, applied validation checks and structured the datas[...]</div>
-                <div style="margin-top:6px"><strong>Tools:</strong> Microsoft Excel</div>
-                <div style="margin-top:6px"><strong>Key outcomes:</strong> Improved data organization and readability, reduced errors in billing records, and produced a structured dataset suitable for[...]</div>
-                <div style="margin-top:6px"><strong>Conclusion:</strong> Demonstrates practical experience in data handling, cleaning and record management for administrative and financial datasets.</div>
+            <!-- Project 1 -->
+            <div
+              style="font-weight:700; color:var(--accent); font-size:14px; margin-bottom:-8px; padding-left:2px; text-transform:uppercase; letter-spacing:1px">
+              Project 1</div>
+            <div class="project-card">
+              <div>
+                <h3>Billing Data Management</h3>
+                <p class="muted" style="margin-top:8px">This project analyzes customer billing call data to uncover
+                  usage patterns and improve data organization for reporting. Using Microsoft Excel, raw billing records
+                  were cleaned, summarized, and visualized to examine call duration behavior and call source
+                  distribution. The analysis demonstrates practical skills in data handling, exploratory analysis, and
+                  business-focused interpretation of results.</p>
+                <div class="skills" style="margin-top:12px; gap:6px">
+                  <span class="tag">Excel</span>
+                  <span class="tag">Data Cleaning</span>
+                </div>
               </div>
+              <button class="btn-outline" onclick="openModal('modal-billing')">View Case Study</button>
             </div>
 
-            <div class="project">
-              <strong>Exchange Rate Volatility Modelling (GARCH)</strong>
-              <p class="muted">Modeled FX return volatility using GARCH-family models, performed model selection and evaluated forecasting performance. Tools: Python (statsmodels), R (rugarch), pandas[...]</p>
+            <!-- Project 2 -->
+            <div
+              style="font-weight:700; color:var(--accent); font-size:14px; margin-bottom:-8px; padding-left:2px; text-transform:uppercase; letter-spacing:1px">
+              Project 2</div>
+            <div class="project-card">
+              <div>
+                <h3>Exchange Rate Volatility (GARCH)</h3>
+                <p class="muted" style="margin-top:8px">Exchange rate movements play a critical role in financial
+                  stability, international trade, and investment decisions. These movements often exhibit periods of
+                  high and low volatility, making constant-variance models unsuitable for proper analysis.
+
+                  This project analyzes the volatility behavior of Nigeria’s exchange rate using the Generalized
+                  Autoregressive Conditional Heteroskedasticity (GARCH) model. By applying time-series techniques, the
+                  study aims to capture volatility clustering and assess the dynamic nature of exchange rate
+                  fluctuations.</p>
+                <div class="skills" style="margin-top:12px; gap:6px">
+                  <span class="tag">Python</span>
+                  <span class="tag">R</span>
+                  <span class="tag">Time Series</span>
+                </div>
+              </div>
+              <button class="btn-outline" onclick="openModal('modal-garch')">View Case Study</button>
             </div>
 
-            <div class="project">
-              <strong>Inflation Trend & Forecasting (Nigeria)</strong>
-              <p class="muted">Analyzed CPI series, decomposed trend and seasonality, and built short-term forecasts using ARIMA/XGBoost hybrids. Presented findings with interactive charts.</p>
+            <!-- Project 3 -->
+            <div
+              style="font-weight:700; color:var(--accent); font-size:14px; margin-bottom:-8px; padding-left:2px; text-transform:uppercase; letter-spacing:1px">
+              Project 3</div>
+            <div class="project-card">
+              <div>
+                <h3>Inflation Trend Forecasting</h3>
+                <p class="muted" style="margin-top:8px">Inflation is a key macroeconomic indicator that influences
+                  monetary policy, investment decisions, and household welfare. Analyzing inflation trends and
+                  forecasting future movements is essential for economic planning and policy evaluation.
+
+                  This project examines historical inflation data to identify underlying trends, seasonal patterns, and
+                  future inflation behavior. Time-series forecasting techniques are applied to generate short-term
+                  inflation forecasts based on observed data dynamics.</p>
+                <div class="skills" style="margin-top:12px; gap:6px">
+                  <span class="tag">Forecasting</span>
+                  <span class="tag">ARIMA</span>
+                  <span class="tag">Visualization</span>
+                </div>
+              </div>
+              <button class="btn-outline" onclick="openModal('modal-inflation')">View Case Study</button>
             </div>
 
-            <div class="project">
-              <strong>Loan Default Risk Analysis</strong>
-              <p class="muted">Cleaned and engineered features from loan datasets, trained classification models, and produced explainable model reports (SHAP) to identify key risk drivers.</p>
-            </div>
+            <!-- Project 4 -->
+            <div
+              style="font-weight:700; color:var(--accent); font-size:14px; margin-bottom:-8px; padding-left:2px; text-transform:uppercase; letter-spacing:1px">
+              Project 4</div>
+            <div class="project-card">
+              <div>
+                <h3>Loan Default Risk Analysis</h3>
+                <p class="muted" style="margin-top:8px">Loan default poses a major risk to financial institutions,
+                  particularly microfinance and retail banks. Understanding the factors that contribute to loan default
+                  is essential for effective credit risk management and informed lending decisions.
 
-            <div class="project">
-              <strong>Interactive Dashboard (Tableau / Streamlit)</strong>
-              <p class="muted">Built dashboards for stakeholders to explore KPIs, cohort metrics and scenario analysis with filters and downloadable reports.</p>
+                  This project analyzes loan data to assess the likelihood of default using statistical classification
+                  techniques. By applying logistic regression, the study models the probability of loan default based on
+                  borrower and loan characteristics, providing insights into risk patterns within a lending portfolio.
+                </p>
+                <div class="skills" style="margin-top:12px; gap:6px">
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Risk Modeling</span>
+                </div>
+              </div>
+              <button class="btn-outline" onclick="openModal('modal-loan')">View Case Study</button>
             </div>
-
           </div>
         </section>
 
-        <section style="margin-top:16px">
-          <h2>Approach</h2>
-          <p>I follow a reproducible workflow: define the question, gather and clean data, exploratory analysis, select appropriate statistical/machine learning methods, validate results and communica[...]</p>
-        </section>
+        <!-- MODALS -->
+
+        <!-- Modal 1: Billing -->
+        <div id="modal-billing" class="modal-overlay">
+          <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal-billing')">&times;</button>
+            <div class="modal-header">
+              <h2>Billing Data Management & Analysis</h2>
+              <div class="subtitle">Ensuring accuracy in financial reporting through rigorous data validation</div>
+            </div>
+            <div class="modal-grid">
+              <div>
+                <div class="modal-img-placeholder" style="background:none; border:none; padding:0; height:auto">
+                  <img src="asset/project1_dashboard.png" alt="Billing Dashboard Analysis"
+                    style="width:100%; border-radius:8px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.5)">
+                </div>
+
+                <h3>Problem Statement</h3>
+                <p class="muted">This project involved managing and organizing billing records to ensure accuracy,
+                  consistency, and ease of reporting. The objective was to structure raw billing data in a way that
+                  supports proper record-keeping, analysis, and decision-making.</p>
+
+                <h3 style="margin-top:24px">Data Description</h3>
+                <p class="muted">The dataset consists of billing records stored in an Excel file, containing transaction
+                  details such as billing dates, customer information, charges, and payment-related entries. The data
+                  required proper organization and validation to reduce errors and improve usability.</p>
+
+                <h3 style="margin-top:24px">Methodology / Tasks</h3>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Cleaned and organized billing data to remove inconsistencies and duplicates.</li>
+                  <li>Structured the dataset for easy sorting, filtering, and analysis.</li>
+                  <li>Applied basic validation checks to ensure data accuracy.</li>
+                  <li>Prepared the data for reporting and future analysis.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Conclusion</h3>
+                <p class="muted">This project demonstrates practical experience in data handling, data cleaning, and
+                  record management using Excel. It highlights my ability to work with real-world administrative and
+                  financial data in a professional setting.</p>
+              </div>
+              <div>
+                <div class="detail-item">
+                  <h4>Tools Used</h4>
+                  <div class="skills">
+                    <span class="tag">Excel</span>
+                    <span class="tag">Data Cleaning</span>
+                    <span class="tag">Data Validation</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <h4>Key Outcomes</h4>
+                  <p>✅ Improved data organization and readability.</p>
+                  <p style="margin-top:8px">✅ Reduced errors in billing records.</p>
+                  <p style="margin-top:8px">✅ Created a structured billing dataset suitable for analysis and reporting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2: GARCH -->
+        <div id="modal-garch" class="modal-overlay">
+          <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal-garch')">&times;</button>
+            <div class="modal-header">
+              <h2>Exchange Rate Volatility Modeling</h2>
+              <div class="subtitle">Quantifying market risk using GARCH-family models</div>
+            </div>
+            <div class="modal-grid">
+              <div>
+                <div class="modal-img-placeholder" style="background:none; border:none; padding:0; height:auto">
+                  <img src="asset/project2_volatility.png" alt="GARCH Volatility Plot"
+                    style="width:100%; border-radius:8px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.5)">
+                </div>
+
+                <h3>Problem Statement</h3>
+                <p class="muted">Traditional time-series models assume constant variance, which is unrealistic for
+                  financial data such as exchange rates. This project seeks to model time-varying volatility in
+                  Nigeria’s exchange rate and determine whether GARCH models adequately capture observed volatility
+                  patterns.</p>
+
+                <h3 style="margin-top:24px">Data Description</h3>
+                <p class="muted">The dataset consists of time-series exchange rate data obtained from the Central Bank
+                  of Nigeria (CBN). The data records periodic exchange rate values over time and is suitable for
+                  volatility and financial risk analysis.</p>
+
+                <h3 style="margin-top:24px">Data Preparation</h3>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Converted exchange rate series into returns.</li>
+                  <li>Conducted descriptive statistical analysis.</li>
+                  <li>Checked for stationarity using unit root tests.</li>
+                  <li>Tested for the presence of ARCH effects.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Methodology</h3>
+                <p class="muted">The analysis workflow involved:</p>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Computation of log returns.</li>
+                  <li>Stationarity testing (ADF test).</li>
+                  <li>Estimation of ARCH and GARCH models.</li>
+                  <li>Model diagnostics and residual analysis.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Analysis & Visualizations</h3>
+                <div style="margin-top:12px">
+                  <strong>1. Exchange Rate Return Series (Line Plot)</strong>
+                  <img src="asset/p2_returns.png" alt="Exchange Rate Returns"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">The plot illustrates fluctuations in exchange
+                    rate returns over time, showing periods of high and low volatility.</p>
+                </div>
+                <div style="margin-top:12px">
+                  <strong>2. Volatility Clustering (Conditional Variance Plot)</strong>
+                  <img src="asset/p2_volatility_plot.png" alt="Volatility Clustering"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">The conditional variance plot reveals clear
+                    volatility clustering, where periods of high volatility are followed by similar periods.</p>
+                </div>
+                <div style="margin-top:12px">
+                  <strong>3. GARCH Model Diagnostics (Residual & ACF Plots)</strong>
+                  <img src="asset/p2_diagnostics.png" alt="GARCH Diagnostics"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">Diagnostic plots confirm that the GARCH model
+                    adequately captures time-varying volatility, with reduced autocorrelation in standardized residuals.
+                  </p>
+                </div>
+
+                <h3 style="margin-top:24px">Conclusion</h3>
+                <p class="muted">This project demonstrates the application of GARCH models in analyzing financial
+                  time-series data. The results confirm that exchange rate volatility is time-varying and clustered,
+                  highlighting the importance of advanced econometric models in financial risk analysis and policy
+                  evaluation.</p>
+              </div>
+              <div>
+                <div class="detail-item">
+                  <h4>Tools Used</h4>
+                  <div class="skills">
+                    <span class="tag">R</span>
+                    <span class="tag">EViews</span>
+                    <span class="tag">Time Series Analysis</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <h4>Key Findings</h4>
+                  <p>✅ Exchange rate returns exhibit volatility clustering.</p>
+                  <p style="margin-top:8px">✅ Presence of significant ARCH effects in the data.</p>
+                  <p style="margin-top:8px">✅ GARCH models effectively capture time-varying volatility.</p>
+                  <p style="margin-top:8px">✅ Variance persistence indicates long-memory behavior in exchange rate
+                    volatility.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3: Inflation -->
+        <div id="modal-inflation" class="modal-overlay">
+          <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal-inflation')">&times;</button>
+            <div class="modal-header">
+              <h2>Inflation Trend & Forecasting</h2>
+              <div class="subtitle">Time-series analysis of Nigeria's CPI data</div>
+            </div>
+            <div class="modal-grid">
+              <div>
+                <div class="modal-img-placeholder" style="background:none; border:none; padding:0; height:auto">
+                  <img src="asset/project3_inflation.png" alt="Inflation Forecast Chart"
+                    style="width:100%; border-radius:8px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.5)">
+                </div>
+
+                <h3>Problem Statement</h3>
+                <p class="muted">Accurate inflation forecasting is critical for policy formulation and economic
+                  stability. This project aims to analyze historical inflation trends and develop a statistical
+                  forecasting model to predict future inflation rates.</p>
+
+                <h3 style="margin-top:24px">Data Description</h3>
+                <p class="muted">The dataset consists of time-series inflation data obtained from official economic
+                  sources such as the National Bureau of Statistics (NBS) and the World Bank. The data records periodic
+                  inflation rates over time.</p>
+
+                <h3 style="margin-top:24px">Data Preparation</h3>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Organized inflation time-series data.</li>
+                  <li>Conducted descriptive statistical analysis.</li>
+                  <li>Checked for stationarity and trends.</li>
+                  <li>Transformed data where necessary.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Methodology</h3>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Time-series visualization.</li>
+                  <li>Trend and seasonality analysis.</li>
+                  <li>Stationarity testing.</li>
+                  <li>ARIMA-based forecasting.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Analysis & Visualizations</h3>
+                <div style="margin-top:12px">
+                  <strong>1. Inflation Trend Over Time (Line Plot)</strong>
+                  <img src="asset/p3_trend.png" alt="Inflation Trend"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">The line plot shows long-term inflation trends
+                    and periods of rising and falling inflation rates.</p>
+                </div>
+                <div style="margin-top:12px">
+                  <strong>2. Decomposition of Inflation Series (Decomposition Plot)</strong>
+                  <img src="asset/p3_decomposition_plot.png" alt="Inflation Decomposition"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">The decomposition separates the inflation
+                    series into trend, seasonal, and irregular components.</p>
+                </div>
+                <div style="margin-top:12px">
+                  <strong>3. Inflation Forecast (Forecast Plot)</strong>
+                  <img src="asset/p3_forecast_zoom.png" alt="Inflation Forecast Zoom"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">The forecast plot presents projected inflation
+                    rates along with confidence intervals, illustrating expected future behavior.</p>
+                </div>
+
+                <h3 style="margin-top:24px">Conclusion</h3>
+                <p class="muted">This project demonstrates the use of time-series techniques in macroeconomic analysis
+                  and forecasting. The results highlight how statistical models can support inflation monitoring and
+                  economic policy decisions.</p>
+              </div>
+              <div>
+                <div class="detail-item">
+                  <h4>Tools Used</h4>
+                  <div class="skills">
+                    <span class="tag">R</span>
+                    <span class="tag">Excel</span>
+                    <span class="tag">EViews</span>
+                    <span class="tag">ARIMA</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <h4>Key Findings</h4>
+                  <p>✅ Inflation exhibits clear trend movements over time.</p>
+                  <p style="margin-top:8px">✅ Seasonal effects are present in certain periods.</p>
+                  <p style="margin-top:8px">✅ ARIMA models provide reasonable short-term forecasts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 4: Loan Default -->
+        <div id="modal-loan" class="modal-overlay">
+          <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal-loan')">&times;</button>
+            <div class="modal-header">
+              <h2>Loan Default Risk Analysis</h2>
+              <div class="subtitle">Predictive modeling for credit risk assessment</div>
+            </div>
+            <div class="modal-grid">
+              <div>
+                <div class="modal-img-placeholder" style="background:none; border:none; padding:0; height:auto">
+                  <img src="asset/project4_risk.png" alt="Loan Risk SHAP Analysis"
+                    style="width:100%; border-radius:8px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 10px 30px rgba(0,0,0,0.5)">
+                </div>
+
+                <h3>Problem Statement</h3>
+                <p class="muted">Financial institutions require reliable models to predict loan default and reduce
+                  credit losses. This project seeks to identify key predictors of loan default and estimate default
+                  probabilities using a statistical risk modeling approach.</p>
+
+                <h3 style="margin-top:24px">Data Description</h3>
+                <p class="muted">The dataset consists of loan-level records containing borrower information, loan
+                  characteristics, and repayment outcomes. The response variable indicates whether a loan default
+                  occurred, while explanatory variables represent borrower and loan attributes.</p>
+
+                <h3 style="margin-top:24px">Data Preparation</h3>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Cleaned and validated loan records.</li>
+                  <li>Encoded categorical variables where necessary.</li>
+                  <li>Checked for missing and inconsistent values.</li>
+                  <li>Prepared response and predictor variables.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Methodology</h3>
+                <ul class="muted" style="padding-left:20px; margin-top:8px">
+                  <li>Exploratory data analysis of loan characteristics.</li>
+                  <li>Logistic regression modeling.</li>
+                  <li>Estimation of default probabilities.</li>
+                  <li>Model evaluation using classification metrics.</li>
+                </ul>
+
+                <h3 style="margin-top:24px">Analysis & Visualizations</h3>
+                <div style="margin-top:12px">
+                  <strong>1. Default vs Non-Default Distribution (Bar Chart)</strong>
+                  <img src="asset/p4_distribution.png" alt="Loan Status Distribution"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">This chart compares the frequency of defaulted
+                    and non-defaulted loans, providing an overview of credit risk distribution.</p>
+                </div>
+                <div style="margin-top:12px">
+                  <strong>2. Probability of Default by Loan Characteristics (Line or Bar Chart)</strong>
+                  <img src="asset/p4_pd_curve.png" alt="PD by DTI Ratio"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">The visualization shows how default
+                    probability varies across loan attributes, highlighting high-risk segments.</p>
+                </div>
+                <div style="margin-top:12px">
+                  <strong>3. Model Performance (Confusion Matrix / ROC Curve)</strong>
+                  <img src="asset/p4_roc.png" alt="ROC Curve"
+                    style="width:100%; margin-top:8px; border-radius:4px; opacity:0.9">
+                  <p class="muted" style="font-size:14px; margin-top:6px">Model evaluation results indicate the
+                    effectiveness of the logistic regression model in distinguishing defaulted from non-defaulted loans.
+                  </p>
+                </div>
+
+                <h3 style="margin-top:24px">Conclusion</h3>
+                <p class="muted">This project demonstrates the application of statistical modeling techniques in credit
+                  risk analysis. By estimating default probabilities, the analysis supports risk-based lending decisions
+                  and highlights the role of data-driven approaches in financial risk management.</p>
+              </div>
+              <div>
+                <div class="detail-item">
+                  <h4>Tools Used</h4>
+                  <div class="skills">
+                    <span class="tag">Excel</span>
+                    <span class="tag">R</span>
+                    <span class="tag">Python</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <h4>Key Findings</h4>
+                  <p>✅ Certain loan and borrower characteristics significantly influence default risk.</p>
+                  <p style="margin-top:8px">✅ Logistic regression effectively estimates default probabilities.</p>
+                  <p style="margin-top:8px">✅ The model provides interpretable results useful for credit
+                    decision-making.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            }
+          }
+          function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+              modal.classList.remove('active');
+              document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+          }
+          // Close modal when clicking outside content
+          window.onclick = function (event) {
+            if (event.target.classList.contains('modal-overlay')) {
+              event.target.classList.remove('active');
+              document.body.style.overflow = 'auto';
+            }
+          }
+        </script>
+
+
 
       </main>
 
       <aside class="card">
         <section>
-          <h3 style="margin-top:0">Skills</h3>
-          <div class="skills">
-            <span class="skill">Python (pandas, scikit-learn)</span>
-            <span class="skill">R (tidyverse)</span>
-            <span class="skill">Time Series</span>
-            <span class="skill">Forecasting</span>
-            <span class="skill">GARCH</span>
-            <span class="skill">SQL</span>
-            <span class="skill">Data Viz (matplotlib, seaborn)</span>
-            <span class="skill">Tableau / Power BI</span>
-            <span class="skill">Machine Learning</span>
-            <span class="skill">Statistics</span>
+          <h3 style="margin-top:0">Skills & Expertise</h3>
+          <div style="display:flex; flex-direction:column; gap:16px">
+            <div>
+              <h4
+                style="margin:0 0 8px 0; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.5px">
+                Languages & Libs</h4>
+              <div class="skills">
+                <span class="skill">Python (pandas, scikit-learn)</span>
+                <span class="skill">R (tidyverse)</span>
+                <span class="skill">SQL</span>
+              </div>
+            </div>
+            <div>
+              <h4
+                style="margin:0 0 8px 0; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.5px">
+                Analysis & Modeling</h4>
+              <div class="skills">
+                <span class="skill">Time Series</span>
+                <span class="skill">Forecasting (ARIMA)</span>
+                <span class="skill">GARCH Models</span>
+                <span class="skill">Risk Modeling</span>
+                <span class="skill">Hypothesis Testing</span>
+              </div>
+            </div>
+            <div>
+              <h4
+                style="margin:0 0 8px 0; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:0.5px">
+                Tools & Viz</h4>
+              <div class="skills">
+                <span class="skill">Tableau</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">Matplotlib/Seaborn</span>
+                <span class="skill">Excel (VBA)</span>
+                <span class="skill">Git/GitHub</span>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -134,8 +878,12 @@
 
     <footer>
       <div>© Samuel Owoseni — Data Analysis & Statistical Modeling</div>
-      <div style="margin-top:6px;color:var(--muted)">Built with a focus on clarity and reproducibility. View source on <a class="link" href="https://github.com/SAMUELSONAK/owoseni-samuel.github.io" target="_blank" rel="noopener">GitHub</a></div>
+      <div style="margin-top:6px;color:var(--muted)">Built with a focus on clarity and reproducibility. View source on
+        <a class="link" href="https://github.com/SAMUELSONAK/owoseni-samuel.github.io" target="_blank"
+          rel="noopener">GitHub</a>
+      </div>
     </footer>
   </div>
 </body>
+
 </html>
